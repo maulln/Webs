@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styless.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+  <div class="container" id="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="password">Masukkan Password:</label>
+      <div class="password-container">
+        <input type="password" id="password" name="password" required>
+        <button type="button" id="togglePassword" class="eye-button">
+          <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+            <path d="M12 6c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zm0 10c-2.211 0-4-1.789-4-4s1.789-4 4-4 4 1.789 4 4-1.789 4-4 4zm0-8c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <button type="submit">Masuk</button>
+    </form>
+    <p id="error-message" class="error-message" style="display: none;">Password Salah. Coba lagi!</p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
